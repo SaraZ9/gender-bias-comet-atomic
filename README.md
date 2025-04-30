@@ -11,12 +11,12 @@ This project aims to investigate whether COMET-ATOMIC systematically produces **
 To support this analysis, we constructed a **controlled dataset** comprising two major components:
 
 - **Name-Gender Dataset**:  
-  We curated a set of first names divided into three categories—female, male, and unisex. Female and male names were selected from the U.S. Social Security Administration’s list of the 100 most common names by gender. For unisex names, we used a large language model (LLM) to generate a list of names frequently used across both genders. Additionally, we incorporated the gender-neutral placeholder **“PersonX”**, following conventions used in the ATOMIC20⁴⁰ dataset, to enable neutral comparisons.
+  We curated a set of first names divided into three categories—female, male, and unisex. Female and male names were selected from the U.S. Social Security Administration’s list of the 100 most common names by gender. For unisex names, we used a large language model (LLM) to generate a list of names frequently used across both genders. Additionally, we incorporated the gender-neutral placeholder **“PersonX”**, following conventions used in the ATOMIC 2020 dataset, to enable neutral comparisons.
 
 - **Event/Action Dataset**:  
   We adapted event templates from the **WinoBias benchmark** (Zhao et al., 2018), which was originally designed to study gender bias in coreference resolution. We removed all original subjects, sub-events, and reasoning statements to isolate the core action. After filtering duplicates, we obtained **400 unique base events** describing occupational or socially relevant scenarios suitable for probing model behavior.
 
-Each name was randomly paired with a base event and one of the **51 predefined relation types** from COMET-ATOMIC20⁴⁰, resulting in a large-scale dataset for comparative inference generation across gender categories.
+Each name was randomly paired with a base event and one of the **51 predefined relation types** from COMET-ATOMIC 2020 , resulting in a large-scale dataset for comparative inference generation across gender categories.
 
 ## Evaluation Metrics
 
